@@ -1,10 +1,4 @@
---HI---
 import tkinter as tk
-
-LARGE_FONT_STYLE = ("Arial", 40, "bold")
-SMALL_FONT_STYLE = ("Arial", 16)
-DIGITS_FONT_STYLE = ("Arial", 24, "bold")
-DEFAULT_FONT_STYLE = ("Arial", 20)
 
 LARGE_FONT_STYLE = ("Arial", 40, "bold")
 SMALL_FONT_STYLE = ("Arial", 16)
@@ -98,8 +92,6 @@ class Calculator:
 
     def create_operator_buttons(self):
         i = 0
-        J = 10
-        K = 1
         for operator, symbol in self.operations.items():
             button = tk.Button(self.buttons_frame, text=symbol, bg=OFF_WHITE, fg=LABEL_COLOR, font=DEFAULT_FONT_STYLE,
                                borderwidth=0, command=lambda x=operator: self.append_operator(x))
